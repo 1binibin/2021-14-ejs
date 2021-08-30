@@ -25,7 +25,8 @@ const desert = [
     { name: '바닐라쉐이크', price:5500 },
 ]
 /************** view engine ***************/
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs') // Express 에서 view엔진을 ejs 로 설정
+
 app.set('views', './views')
 
 
