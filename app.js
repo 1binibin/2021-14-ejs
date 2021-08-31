@@ -20,7 +20,7 @@ app.get('/about', (req, res, next) =>{
     const title = 'About Me'
     const file = 'about'
     const content = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, repellendus. Possimus beatae itaque repellendus veniam sapiente qui ullam necessitatibus ex ab? Voluptatibus, doloribus molestias ut obcaecati dolor quae dignissimos maiores.'
-    res.render('about', { title, file, content })
+    res.render('site/about', { title, file, content })
 } )
 
 app.get('/pf', (req, res, next) =>{
@@ -31,7 +31,7 @@ app.get('/pf', (req, res, next) =>{
         { title: 'PF_02', src: 'f2.jpg' },
         { title: 'PF_03', src: 'f3.jpg' },
     ]
-    res.render('about', { title, file, content })
+    res.render('site/about', { title, file, lists })
 } )
 
 

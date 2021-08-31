@@ -37,7 +37,7 @@ app.use(express.urlencoded({ extended: false }))
 
 /*************** router init **************/
 app.use('/', express.static('./public'))
-app.use('/resources', express.static('./assets'))   // 우회하는 느낌, 폴더명을 은닉함, assets의 파일을 접근못함 이름을 바꾸는느낌
+// app.use('/resources', express.static('./assets'))   // 우회하는 느낌, 폴더명을 은닉함, assets의 파일을 접근못함 이름을 바꾸는느낌
 app.get('/coffee', (req, res, next) => {
     /* const sendMenus = _.cloneDeep(menus).map(v => { // deep copy _.cloneDeep lodash사용
         v.price = numeral(v.price).format('0,0')

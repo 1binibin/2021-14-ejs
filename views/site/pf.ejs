@@ -1,0 +1,16 @@
+<%- include('../inc/head')  %> 
+<div class="wrapper">
+    <%- include('../inc/navi')  %> 
+    <!-- 본문내용 -->
+    <section class="pf-wrap content-wrapper">
+        <%- include('../inc/title-bar') %> 
+        <div class="pf-wrap">
+            <% for(let list of lists){ %> 
+            <%- include('../components/list')  %> 
+            <% } %> 
+        </div>
+    </section>
+    <!-- 본문내용.끝 -->
+    <%- include('../inc/footer')  %> 
+</div>
+<%- include('../inc/foot')  %> 
