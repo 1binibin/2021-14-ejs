@@ -1,14 +1,18 @@
 const express = require('express')
 const router = express.Router()
+
 const createError = require('http-errors')
 
-router.use((req, res, next) => {
-    next( createError(404, '파일을 찾을 수 없습니다') )
+router.get('/login', (req, res, next) => {
+	next(createError(500, '알수없는 오류 관리자에게 문의하세요.'))
 })
 
-router.use((error, req, res, next) => {
-    console.log(error.status)
-    console.log(error.message)
+router.get('/logout', (req, res, next) => {
+	res.send('로그아웃')
+})
+
+router.get('/join', (req, res, next) => {
+	res.send('회원가입')
 })
 
 module.exports = router
