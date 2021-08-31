@@ -5,8 +5,8 @@ const app = express()
 
 
 /*************** view engine *****************/
-app.set('view engine', 'ejs')
-app.set('views', './views')
+app.set('view engine', 'pug')
+app.set('views', './views2')
 
 
 /*************** Middleware *****************/
@@ -31,7 +31,20 @@ app.get('/pf', (req, res, next) =>{
         { title: 'PF_02', src: 'f2.jpg' },
         { title: 'PF_03', src: 'f3.jpg' },
     ]
-    res.render('site/about', { title, file, lists })
+    res.render('site/pf', { title, file, lists })
+} )
+
+app.get('/team', (req, res, next) =>{
+    const title = 'Team Information'
+    const subTitle = '팀원을 소개합니다.'
+    const file = 'team'
+    const lists = [
+        { title: 'CEO', src: 'teami.jpg' },
+        { title: 'CTO', src: 'team2.jpg' },
+        { title: 'Engineer', src: 'team3.jpg' },
+        { title: 'Designer', src: 'team4.jpg' },
+    ]
+    res.render('site/team', { title, subTitle, file, lists })
 } )
 
 
