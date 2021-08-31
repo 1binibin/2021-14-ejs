@@ -47,7 +47,7 @@ app.get('/pf', (req, res, next) =>{
     const title = 'Portfolio'
     const file = 'pf'
     const lists = [
-        { title: 'PF_01', src: 'fi.jpg' },
+        { title: 'PF_01', src: 'f1.jpg' },
         { title: 'PF_02', src: 'f2.jpg' },
         { title: 'PF_03', src: 'f3.jpg' },
     ]
@@ -59,7 +59,7 @@ app.get('/team', (req, res, next) =>{
     const subTitle = '팀원을 소개합니다.'
     const file = 'team'
     const lists = [
-        { title: 'CEO', src: 'teami.jpg' },
+        { title: 'CEO', src: 'team1.jpg' },
         { title: 'CTO', src: 'team2.jpg' },
         { title: 'Engineer', src: 'team3.jpg' },
         { title: 'Designer', src: 'team4.jpg' },
