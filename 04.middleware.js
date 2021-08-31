@@ -16,8 +16,8 @@ const mw3_1 = require('./middlewares/mw3_1')
 * ! app.put()    // put
 * ! app.delete() // delete
 middleware vs router
-* ! app.use( (req, res, next ) => { })  // middleware 함수만 있다.
-* ! app.use('주소줄' (req, res, next ) => { })  // router 함수만 있다.
+* ! app.use( (req, res, next ) => { })  => middleware 
+* ! app.use('주소부' (req, res, next ) => { })  => router 
 */
 
 // 1 ~ 3: 모든요청에 대한 미들웨어
