@@ -61,8 +61,8 @@ app.get('/test', (req, res, next) => {
 // 5번 방식
 app.get('/test', mw2_1, mw3_1('HONG'), (req, res, next) => {
     // const { headers, baseUrl, hostname, ip, originalUrl, path, subdomains } = req
-    const { headers, mw1, mw2, mw3, mw4, mw5 } = req
-    res.json({ headers, mw1, mw2, mw3, mw4, mw5 })
+    const { headers, mw1, mw2, mw3, mw4, mw5, mw2_1, mw3_1 } = req
+    res.json({ headers, mw1, mw2, mw3, mw4, mw5, mw2_1, mw3_1 })
 })
 
 /*************** server init  *****************/
