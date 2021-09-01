@@ -20,7 +20,7 @@ const error = (code, msg) => {
 
 			break;
 	}
-	return createError(code || 500, message +'^^' + msg )
+	return createError(code || 500, message +'^^' + msg)
 }
 
 const location = src => path.join(__dirname, '../', src)
